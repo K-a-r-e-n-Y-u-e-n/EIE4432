@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login</title>
+		<script src="miniproject.js">	</script>		
+	</head>
+	<body>
+	<form method="post" id="log">
+		<h1>Login</h1>
+		<p>Please choose your role to login: </p>
+		<select id="role" name="role">
+			<option></option>
+			<option>Student</option>
+			<option>Teacher</option>
+			<option>Adminstrator</option>
+		</select>
+		<p>Please enter the ID and password to login: </p>
+		
+		<table>
+			<tr><td>ID: </td><td><input type='text' id='id' name='id'></td></tr>
+			
+			<tr><td>Password: </td><td><input type='password' id='pw' name='pw'></td></tr>
+			
+			<tr><td></td><td align='right'><input type='button' value='login' onclick="login()"></td></tr>
+		</table>
+		<p><a href="resetpw.html">Forget Password</a></p>
+		<br>If you do not have a account, please register.<input type="submit" name="reg" value="Registration" formaction="registration.html">
+	</form>
+	
+	</body>
+</html>

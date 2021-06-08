@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Forget Password</title>
+		<script src="miniproject.js">	</script>		
+	</head>
+	<body>
+	<form method="post" id="forget">
+		<h1>Forget Password</h1>
+		<p>Please enter the ID and email to reset password: </p>
+		
+		<table>
+			<tr><td>Role: </td>
+			<td><select id="role" name="role">
+			<option></option>
+			<option>Student</option>
+			<option>Teacher</option>
+			</select></td></tr>
+			
+			<tr><td>ID: </td><td><input type='text' id='id' name='id'></td></tr>
+			
+			<tr><td>Email: </td><td><input type='text' id='email' name='email'></td></tr>
+			
+			<tr><td>New Password: </td><td><input type='password' id='pw' name='pw'></td></tr>
+			
+			<tr><td></td><td align='right'><input type='submit' value='Reset Password' formaction="resetpw.php"></td></tr>
+		</table>
+	</form>
+	
+	</body>
+</html>

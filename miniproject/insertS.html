@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Registration</title>
+		<script src="miniproject.js">	</script>
+	</head>
+	<body>
+		<p>Please enter the information: </p>
+		<form method='POST' action='getStudentData.php' enctype='multipart/form-data' id='stdForm'>
+		
+		<table>
+		
+		<tr><td>Login ID: </td><td><input type='text' name='loginId' id='id'></td><div id='error'></div></tr>
+		
+		<tr><td>Password: </td><td><input type='password' name='pw'id='pw'></td></tr>
+		
+		<tr><td>Nick Name: </td><td><input type='text' name='nick' id='nick'></td></tr>
+		
+		<tr><td>Email: </td><td><input type='text' name='email' id='email'></td></tr>
+		
+		<tr><td>Gender: </td><td><select name='gender' id='gender'><option></option><option>F</option><option>M</option></td></tr>
+		
+		<tr><td>Birthday: </td><td><input type='date' name='birthday' id='birthday'></td></tr>
+		
+		<tr><td><input type='file' name='myimage' id='myimage'></td><td><input type='submit' value='Register'></td></tr>
+		
+		</table>
+		</form>
+	</body>
+</html>
